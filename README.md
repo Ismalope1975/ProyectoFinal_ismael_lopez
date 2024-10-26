@@ -1,4 +1,4 @@
-Cinema2024
+#Cinema2024
 
 Es una aplicación diseñada para los amantes del cine que buscan las películas en cartelera y desean realizar reservas de asientos de manera fácil y eficiente.
 
