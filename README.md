@@ -1,61 +1,52 @@
-#Cinema2024
+# Cinema2024
 
-Es una aplicación diseñada para los amantes del cine que buscan las películas en cartelera y desean realizar reservas de asientos de manera fácil y eficiente.
+## Descripción
+CineFanatic es una página web diseñada para los amantes del cine. Permite a los usuarios ver la cartelera de películas en cartel, buscar información detallada sobre películas y realizar reservas de asientos en el cine. Toda la información se maneja localmente utilizando `localStorage`.
 
-Descripción
-Esta aplicación ofrece un buscador de películas en cartelera y un buscador especial para los fanáticos del cine, que se alimenta de una API externa. A continuación, se describen las principales características de la aplicación:
+## Funcionalidades
 
-Funcionalidades
-Registro y Login:
+### Cartelera de Cine
+- **Visualización de Cartelera**: Muestra la lista de películas en cartel, almacenada en un archivo JSON y cargada en `localStorage`.
+- **Detalles de Películas**: Al hacer clic en "Más info", se muestra información detallada de la película.
 
-Los usuarios deben registrarse para acceder a la cartelera de películas.
-Se requiere un DNI y una contraseña para iniciar sesión.
-Los datos del usuario se almacenan en localStorage, así como todos los usuarios registrados.
-Cartelera de Películas:
+### Buscador de Películas
+- **Búsqueda Avanzada**: Permite a los usuarios buscar películas y obtener datos interesantes desde una API externa.
 
-Al iniciar sesión, el botón de "Cartelera" se habilita, permitiendo a los usuarios acceder a un listado de las películas en cartelera.
-La información incluye dónde se proyecta, días y precios.
-Los datos de las películas se obtienen de un archivo JSON y se cargan en localStorage.
-Detalles de la Película:
+### Gestión de Usuarios
+- **Inicio de Sesión**: Los usuarios deben iniciar sesión con un documento y contraseña para acceder a la cartelera.
+- **Registro de Usuarios**: Si no están registrados, deben completar un formulario de registro. Los datos se almacenan en `localStorage`.
 
-Al seleccionar "Más Info" sobre una película, se almacena el identificador de la misma para abrir la página de reservas.
-Se carga la información detallada de la película y los datos del usuario logueado.
-Reservas de Asientos:
+### Reservas de Asientos
+- **Selección de Asientos**: Los usuarios pueden reservar asientos seleccionando la cantidad y posición, o de forma aleatoria.
+- **Simulación de Asientos**: Los asientos se muestran en un grid con posiciones codificadas por letras y números.
+- **Gestión de Reservas**: Las reservas se muestran al final de la página y se almacenan en `localStorage`. Los usuarios pueden cancelar o modificar sus reservas.
 
-Se presenta una cuadrícula con los asientos del cine, codificados por letra y número.
-La información de los asientos reservados y libres se almacena en localStorage.
-Se pueden realizar reservas de dos maneras:
-Manual: Ingresando la cantidad de asientos, fecha de reserva y seleccionando las posiciones de los asientos.
-Aleatoria: Definiendo la cantidad de asientos y la fecha, generando una selección aleatoria.
-Pasarela de Pagos:
+## Uso
 
-Antes de finalizar la reserva, se simula una pasarela de pagos para confirmar el pago.
-Una vez confirmado, se guarda la reserva en localStorage, incluyendo información de la película, del usuario y de los asientos reservados.
-Gestión de Reservas:
+1. **Inicio de Sesión/Registro**:
+   - Inicia sesión con tu documento y contraseña.
+   - Si no tienes una cuenta, regístrate completando el formulario.
 
-Las reservas realizadas se listan en la parte inferior de la página.
-Al hacer clic en una reserva, se habilitan opciones para cancelarla o modificar las localidades.
-Para editar una reserva, se debe seleccionar la misma cantidad de asientos del pedido original.
-Tecnologías Utilizadas
-HTML
-CSS
-JavaScript
-localStorage
-API externa para datos de películas
-Cómo Iniciar
-Clona este repositorio:
-bash
-Copiar código
-git clone https://github.com/tu_usuario/movie-finder-app.git
-Abre el archivo index.html en tu navegador.
-Regístrate o inicia sesión para comenzar a explorar la cartelera y realizar reservas.
-Contribuciones
-¡Las contribuciones son bienvenidas! Si tienes ideas o mejoras, no dudes en abrir un issue o enviar un pull request.
+2. **Ver Cartelera**:
+   - Accede a la página de cartelera para ver las películas en cartel.
+   - Haz clic en "Más info" para ver detalles de una película.
 
-Licencia
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+3. **Buscar Películas**:
+   - Utiliza el buscador para encontrar información sobre tus películas favoritas.
 
-¡Disfruta de tu experiencia cinéfila con Movie Finder App! 🍿🎬
+4. **Reservar Asientos**:
+   - Selecciona la película y accede a la página de reservas.
+   - Elige la cantidad de asientos y su posición, o selecciona de forma aleatoria.
+   - Ingresa la fecha de la reserva y confirma.
+
+5. **Gestionar Reservas**:
+   - Revisa tus reservas al final de la página.
+   - Haz clic en una reserva para cancelarla o modificar los asientos.
+
+## Tecnologías Utilizadas
+- **HTML/CSS/JavaScript**: Para la estructura, estilo y funcionalidad de la página.
+- **LocalStorage**: Para almacenar datos de usuarios, cartelera y reservas.
+- **API Externa**: Para obtener información detallada de las películas.
 
 
 
